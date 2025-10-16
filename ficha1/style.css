@@ -1,0 +1,35 @@
+.body{
+    background-color: #F6F5AE;
+    color: #112A46;
+}
+
+h1{
+    font-size: 40px;
+}
+
+#descricao {
+    font-size: 25px;
+
+}
+
+li>p {
+    font-size: 20px;
+}
+
+th{
+    background-color: #112A46;
+    color:#FFCEB6 ;
+    padding: 20px;
+    font-size: 30px;
+}
+
+td {
+    background-color:#473126 ;
+    padding: 10px;
+    font-size: 20px;
+    color: #ECECFF;
+}
+
+table {
+    align-items: center;
+}

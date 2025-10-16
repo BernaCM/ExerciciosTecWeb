@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primark</title>
+</head>
+<body>
+    <h1>Primark</h1>
+    <img style="width: 800px;;" src="https://images.axios.com/i5H7kPOrpDnVnnCUMmLXwnIXN-c=/1920x1080/smart/2024/01/06/1704508460194.jpg" alt="lojaPrimark">
+
+    <form>
+    <h2>Faça o seu pedido</h2>
+
+    <label for="nome">Nome do cliente:</label>
+    <input type="text" id="nome" name="nome" required>
+ <br>
+    <label for="tipo">Peça:</label>
+    <select id="tipo" name="tipo">
+      <option value="">Selecione...</option>
+      <option value="camisa">Camisa</option>
+      <option value="calça">Calças</option>
+      <option value="saia">tshirt</option>
+      <option value="casaco">Casaco</option>
+    </select>
+<br>
+    
+    <div class="radios">
+    <label>Tamanho:</label>
+    <label><input type="radio" name="tamanho" value="P"> P</label>
+    <label><input type="radio" name="tamanho" value="M"> M</label>
+    <label><input type="radio" name="tamanho" value="L"> L</label>
+    <label><input type="radio" name="tamanho" value="XL"> XL</label>
+    </div>
+    <br>
+    <label for="cor">Cor pretendida:</label>
+    <input type="color" id="cor" name="cor" value="#000000">
+    <br>
+    <button type="submit">Enviar Pedido</button>
+  </form>
+</body>
+</html>
