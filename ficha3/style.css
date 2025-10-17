@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'PortoSans-Bold';
+    src: url('PortoSans-Bold.otf') format('opentype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'PortoSans-Light';
+    src: url('PortoSans-Light.otf') format('opentype');
+    font-weight: normal;
+}
+
+body{
+    background-color: rgb(237, 251, 255);
+}
+nav{
+  position: fixed; /* Fixa a barra de navegação */
+  top: 0;          /* Posiciona a barra no topo da janela */
+  width: 100%;     /* Faz a barra ocupar toda a largura da tela */
+  z-index: 100;    /* Garante que a barra fique acima do conteúdo */
+  background-color: #f1f1f1; /* Cor de fundo para visualização */
+  padding: 10px;
+}
+nav a:link {
+  color: #551a8b;        /* link normal */
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: #007bff;        /* link clicado */
+}
+
+nav a:hover {
+  color: #0056b3;        /* ao passar o rato */
+  text-decoration: underline;
+}
+
+nav a:active {
+  color: #ff0000;        /* ao clicar */
+}
+
+p{
+    font-family: 'PortoSans-Light', sans-serif;
+    font-size: 10pt;
+}
+#sobre{
+    padding-top: 120px;
+}
+.Projetos {
+    padding: 10px;
+}
+#projeto1{
+    background-color: beige;
+}
+#projeto2{
+    background-color: rgb(219, 216, 179);
+}
+h1{
+    color: rgb(24, 4, 85);
+    font-family: 'PortoSans-Bold', sans-serif;
+}
+
+h2{
+    color: rgb(86, 4, 86);
+    font-family: 'PortoSans-Bold', sans-serif;
+}
+
+form{
+    border: 4px solid rgb(105, 36, 143); 
+    padding: 20px; 
+    width: 300px
+}
+
+input{
+    padding: 10px;
+}
+#botaoEnviar {
+    background-color: rgb(105, 36, 143);
+    color: rgb(255, 255, 255);
+}
+
+#botaoEnviar:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(105, 36, 143);
+}
+
+label{
+    color: rgb(105, 36, 143);
+}
