@@ -17,7 +17,6 @@ nav{
   position: fixed; /* Fixa a barra de navegação */
   top: 0;          /* Posiciona a barra no topo da janela */
   width: 100%;     /* Faz a barra ocupar toda a largura da tela */
-   /* Garante que a barra fique acima do conteúdo */
   background-color: #f1f1f1; /* Cor de fundo para visualização */
   padding: 10px;
 }
