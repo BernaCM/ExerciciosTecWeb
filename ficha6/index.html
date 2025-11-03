@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login e Registo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="vh-100 d-flex flex-column">
+
+    <div class="container-fluid h-100">
+        <div class="row h-100">
+
+            <div class="col-md-6 bg-light d-flex flex-column  p-5">
+                <h1 class="text-primary mb-4">Bem-vindo!</h1>
+                <p class="text-secondary">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Vivamus ut arcu vitae neque cursus posuere. Nullam non elit a nisl aliquam volutpat. 
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+                    Proin sed facilisis lectus. Integer in augue id eros imperdiet malesuada. 
+                    Maecenas euismod justo at odio ullamcorper, vitae tincidunt sapien sollicitudin.
+                </p>
+            </div>
+
+
+            <div class="col-md-6 bg-white d-flex flex-column  align-items-center p-5 shadow">
+                <div class="w-100" style="max-width: 400px;">
+                    <h2 class="text-center text-primary mb-4">Login</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Nome de Utilizador</label>
+                            <input type="text" class="form-control" id="username" placeholder="Introduza o seu nome de utilizador">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Palavra-passe</label>
+                            <input type="password" class="form-control" id="password" placeholder="Introduza a sua palavra-passe">
+                        </div>
+                        <button type="button" class="btn btn-primary w-100 mb-2">Login</button>
+                        <button type="button" class="btn btn-outline-secondary w-100" data-bs-toggle="modal" data-bs-target="#registarModal">
+                            Registar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="registarModal" tabindex="-1" aria-labelledby="registarModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="registarModalLabel">Criar Conta</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formRegisto">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome Completo</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Introduza o seu nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="usernameReg" class="form-label">Nome de Utilizador</label>
+                            <input type="text" class="form-control" id="usernameReg" placeholder="Escolha um nome de utilizador">
+                        </div>
+                        <div class="mb-3">
+                            <label for="passwordReg" class="form-label">Palavra-passe</label>
+                            <input type="password" class="form-control" id="passwordReg" placeholder="Crie uma palavra-passe">
+                        </div>
+                        <div class="mb-3">
+                            <label for="plano" class="form-label">Tipo de Plano</label>
+                            <select class="form-select" id="plano">
+                                <option selected>Escolha um plano...</option>
+                                <option value="basic">Basic - 4.99€</option>
+                                <option value="plus">Plus - 9.99€</option>
+                                <option value="premium">Premium - 12.99€</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Género</label><br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="genero" id="masculino" value="Masculino">
+                                <label class="form-check-label" for="masculino">Masculino</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="genero" id="feminino" value="Feminino">
+                                <label class="form-check-label" for="feminino">Feminino</label>
+                            </div>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="termos">
+                            <label class="form-check-label" for="termos">Aceito os termos e condições</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer bg-light">
+                    <button type="button" class="btn btn-success">Criar Conta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
