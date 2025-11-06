@@ -1,4 +1,4 @@
-let numeroPC = Math.floor(Math.random() * 10) + 1; // número aleatório entre 1 e 10
+let numeroPC = Math.floor(Math.random() * 10) + 1; 
 let numeroUtilizador;
 
 while (numeroUtilizador != numeroPC) {
